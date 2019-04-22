@@ -1,0 +1,17 @@
+N = int(input("Quantos casos de teste? "))
+
+for c in range(N):
+    teste = input("Digite a sua sequência: ")
+    indice1 = teste[1].isupper()
+
+    if ((indice1 == True) and ((int(teste[0])) != (int(teste[2])))):
+        subtracao = (int(teste[2])) - (int(teste[0]))
+        print (subtracao)
+
+    elif ((indice1 == False) and ((int(teste[0])) != (int(teste[2])))):
+        soma = (int(teste[0])) + (int(teste[2]))
+        print (soma)
+
+    elif ((int(teste[0])) == (int(teste[2]))):
+        produto =  (int(teste[0])) * (int(teste[2]))
+        print (produto)
